@@ -1,18 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <TableRow android:gravity="center_horizontal">
 
-</android.support.constraint.ConstraintLayout>
+        <EditText
+            android:id="@+id/resultEdit"
+            android:layout_height="100dp"
+            android:layout_span="4"
+            android:focusable="false"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:text="10 * 3 = 30"/>
+    </TableRow>
+
+    <TableRow android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_height="70dp"
+            android:layout_span="3"
+            android:onClick="onClick"
+            android:text="CLEAR" />
+
+        <Button
+            android:id="@+id/buttonD"
+            android:layout_height="70dp"
+            android:onClick="onClick"
+            android:text="/" />
+    </TableRow>
+
+    <TableRow android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/num7"
+            android:layout_height="70dp"
+            android:onClick="onClick"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/num8"
+            android:layout_height="70dp"
+            android:onClick="onClick"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/num9"
+            android:layout_height="70dp"
+            android:onClick="onClick"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/buttonM"
+            android:layout_height="70dp"
+            android:onClick="onClick"
+            android:text="*" />
+    </TableRow>
+
+    <TableRow android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/num4"
+            android:layout_height="70dp"
+            android:onClick="onClick"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/num5"
+            android:layout_height="70dp"
+            android:onClick="onClick"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/num6"
+            android:layout_height="70dp"
+            android:onClick="onClick"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/buttonS"
+            android:layout_height="70dp"
+            android:onClick="onClick"
+            android:text="-" />
+    </TableRow>
+
+    <TableRow android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/num1"
+            android:layout_height="70dp"
+            android:onClick="onClick"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/num2"
+            android:layout_height="70dp"
+            android:onClick="onClick"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/num3"
+            android:layout_height="70dp"
+            android:onClick="onClick"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/buttonA"
+            android:layout_height="70dp"
+            android:onClick="onClick"
+            android:text="+" />
+    </TableRow>
+
+    <TableRow android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/num0"
+            android:layout_height="70dp"
+            android:layout_span="3"
+            android:onClick="onClick"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/buttonR"
+            android:layout_height="70dp"
+            android:onClick="onClick"
+            android:text="=" />
+    </TableRow>
+</TableLayout>
+
